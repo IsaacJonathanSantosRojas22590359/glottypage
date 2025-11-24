@@ -35,12 +35,12 @@ Login seguro para 3 tipos de usuario:
 ## 🎨 Diseños Implementados
 
 ### Formulario de Login
-![Login](imagenes/glotty-login.jpg)
+
 ![Login](imagenes/glotty-login.jpg)
 
 ### Formulario de Registro
-![Registro Externo](imagenes/registro-externo.png)
-![Registro Interno](imagenes/registro-interno.png)
+![Registro Externo](imagenes/glotty-registro_externo.jpg)
+![Registro Interno](imagenes/glotty-registro_externo.jpg)
 
 ## 📋 Código Principal
 
