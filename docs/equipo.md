@@ -10,12 +10,12 @@
 | Leonardo Daniel Montes Barajas | Diseñador | Implementación de interfaces, CSS, diseño frontend |
 | Claudio Axel Ponce Guerrero | QA | Control de calidad, pruebas, estándares de código |
 | Juan Enrique Basurto Luna | Analista | Análisis de requisitos, documentación técnica |
-| Omar García Perrusquia | Tester | Pruebas funcionales, reporte de bugs, testing |
+| Joshua García Solís | Tester | Pruebas funcionales, reporte de bugs, testing |
 | Isaac Jonathan Santos Rojas | Documentador | Documentación, gestión de conocimiento, manuales |
 
 ## Metodología de Trabajo
 
-Trabajamos con **metodología Scrum** en sprints de 2 semanas.
+Trabajamos con **Metodología Scrum** en sprints semanales.
 
 ### Flujo de Desarrollo
 1. **Planificación**: Definir objetivos del sprint
@@ -25,10 +25,10 @@ Trabajamos con **metodología Scrum** en sprints de 2 semanas.
 
 ## Tecnologías que Manejamos
 
-- **Backend**: Laravel, PHP, MySQL
+- **Backend**: Laravel, PHP, PostgreSQL
 - **Frontend**: HTML, CSS, JavaScript, Blade
 - **Herramientas**: Git, GitHub, MkDocs
-- **Metodologías**: Scrum, Documentación ISO
+- **Metodologías**: Scrum
 
 ---
 
