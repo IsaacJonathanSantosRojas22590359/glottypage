@@ -51,8 +51,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.superfences
-  - mermaid2
+
 
 
 plugins:
   - search
+  - mermaid2
