@@ -1,16 +1,16 @@
 # Sprint 1: Implementación de Autenticación y Gestión de Personal
 
 **Fecha:** 24 Octubre - 5 Noviembre 2024  
-**Estado:** ✅ Completado  
+**Estado:** Completado  
 **Equipo:** Axolotl Solutions
 
-## 🎯 Objetivo
+## Objetivo
 Establecer los fundamentos de seguridad del sistema y la administración de recursos humanos académicos.
 
-## 📋 Actividades Desarrolladas
+## Actividades Desarrolladas
 Se implementó el sistema de autenticación y autorización, junto con la gestión inicial de los perfiles académicos.
 
-## 🏗️ Arquitectura del Sprint 1
+## Arquitectura del Sprint 1
 
 ### Controladores Desarrollados
 - **`AuthController.php`** - Gestión centralizada de autenticación para todos los tipos de usuario
@@ -21,7 +21,7 @@ Se implementó el sistema de autenticación y autorización, junto con la gesti�
 - **`Profesor.php`** - Modelo para la gestión de información del personal docente
 - **`Coordinador.php`** - Modelo para la administración de usuarios coordinadores
 
-## 🔐 Sistema de Autenticación Unificado
+## Sistema de Autenticación Unificado
 
 ### Características Principales
 - **Login multi-rol** para 3 tipos de usuario: Alumnos, Profesores y Coordinadores
@@ -30,6 +30,7 @@ Se implementó el sistema de autenticación y autorización, junto con la gesti�
 - **Redirección inteligente** a dashboards específicos
 
 ### Flujo de Autenticación
+
 ```mermaid
 sequenceDiagram
     participant U as Usuario
