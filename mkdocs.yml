@@ -24,6 +24,8 @@ theme:
 markdown_extensions:
   - tables
   - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
 
 plugins:
   - search
