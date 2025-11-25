@@ -5,10 +5,26 @@ site_url: https://isaacjonathansantosrojas22590359.github.io/glottypage/
 
 nav:
   - Inicio: index.md
-  - Sprint 1: 
-    - Resumen: sprint-1/index.md
-    - Autenticación: sprint-1/autenticacion.md
-    - CRUD Profesores: sprint-1/crud-profesores.md
+  - Evolución del Proyecto: evolucion.md
+  - Sprints:
+    - Sprint 1: 
+      - Resumen: sprints/sprint-1/index.md
+      - Autenticación: sprints/sprint-1/autenticacion.md
+      - CRUD Profesores: sprints/sprint-1/crud-profesores.md
+    - Sprint 2:
+      - Resumen: sprints/sprint-2/index.md
+      - Gestión de Aulas: sprints/sprint-2/aulas.md
+      - Administración de Horarios: sprints/sprint-2/horarios.md
+    - Sprint 3:
+      - Resumen: sprints/sprint-3/index.md
+      - Periodos Académicos: sprints/sprint-3/periodos.md
+      - Preregistros: sprints/sprint-3/preregistros.md
+      - Gestión de Grupos: sprints/sprint-3/grupos.md
+    - Sprint 4:
+      - Resumen: sprints/sprint-4/index.md
+      - Reestructuración: sprints/sprint-4/reestructuracion.md
+      - Modelos: sprints/sprint-4/modelos.md
+    - Próximos Sprints: sprints/proximos-sprints.md
   - Equipo: equipo.md
 
 theme:
@@ -20,14 +36,13 @@ theme:
 markdown_extensions:
   - tables
   - attr_list
-   - pymdownx.highlight:
+  - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-
 
 plugins:
   - search
