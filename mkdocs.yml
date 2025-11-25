@@ -1,10 +1,6 @@
 site_name: Sistema GLOTTY
 site_description: Documentación técnica por Axolotl Solutions
 site_author: Axolotl Solutions
-repo_url: https://isaacjonathansantosrojas22590359.github.io/glottypage/
-site_name: Sistema GLOTTY
-site_description: Documentación técnica por Axolotl Solutions
-site_author: Axolotl Solutions
 site_url: https://isaacjonathansantosrojas22590359.github.io/glottypage/
 
 nav:
@@ -26,6 +22,8 @@ markdown_extensions:
   - attr_list
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - codehilite
 
 plugins:
   - search
