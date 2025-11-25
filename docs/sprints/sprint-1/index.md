@@ -52,3 +52,4 @@ sequenceDiagram
     else Credenciales inválidas
         A->>U: Mostrar error genérico
     end
+```
