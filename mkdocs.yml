@@ -20,10 +20,14 @@ theme:
 markdown_extensions:
   - tables
   - attr_list
-  - pymdownx.highlight
-  - pymdownx.superfences
+   - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
-  - codehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 
 plugins:
   - search
