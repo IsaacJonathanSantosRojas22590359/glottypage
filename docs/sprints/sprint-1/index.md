@@ -32,23 +32,23 @@ Se implementó el sistema de autenticación y autorización, junto con la gesti�
 ### Flujo de Autenticación
 
 ```mermaid
-Diagrama de Secuencia
-    participante U as Usuario
-    participante A as AuthController
-    participante M as Modelos
-    participante G as Guards
+sequenceDiagram
+    participant U as Usuario
+    participant A as Controlador de Autenticación
+    participant M as Modelos
+    participant G as Sistema de Sesiones
     
     U->>A: Ingresa credenciales
-    A->>M: Buscar Coordinador
+    A->>M: Buscar coordinador
     alt Coordinador válido
-        A->>G: Autenticar guard coordinador
-        G->>U: Redirigir dashboard coordinador
+        A->>G: Autenticar como coordinador
+        G->>U: Redirigir al dashboard de coordinador
     else Profesor válido
-        A->>G: Autenticar guard profesor  
-        G->>U: Redirigir dashboard profesor
+        A->>G: Autenticar como profesor
+        G->>U: Redirigir al dashboard de profesor
     else Alumno válido
-        A->>G: Autenticar guard web
-        G->>U: Redirigir dashboard alumno
+        A->>G: Autenticar como alumno
+        G->>U: Redirigir al dashboard de alumno
     else Credenciales inválidas
         A->>U: Mostrar error genérico
     end
