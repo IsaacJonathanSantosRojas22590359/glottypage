@@ -11,6 +11,7 @@ Establecer los fundamentos de seguridad del sistema y la administración de recu
 Se implementó el sistema de autenticación y autorización, junto con la gestión inicial de los perfiles académicos.
 
 ## Arquitectura del Sprint 1
+El sistema de autenticación de GLOTTY implementa un sistema unificado multi-rol que permite el acceso seguro a tres tipos de usuarios mediante un único punto de entrada. Utiliza el sistema de Guards de Laravel para mantener sesiones separadas y seguras.
 
 ### Controladores Desarrollados
 - **`AuthController.php`** - Gestión centralizada de autenticación para todos los tipos de usuario
