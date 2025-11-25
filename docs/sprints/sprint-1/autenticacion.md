@@ -173,6 +173,6 @@ public function showRegisterForm()
 
 ## Conclusión
 
-El AuthController constituye el núcleo de la autenticación del sistema GLOTTY. Su diseño permite gestionar múltiples roles desde un único punto, asegurando una estructura flexible y escalable. La implementación basada en guards facilita la separación clara entre tipos de usuarios, mientras que el manejo detallado de sesiones y datos del usuario contribuye a una experiencia más personalizada.
+Ela AuthController constituye el núcleo de la autenticación del sistema GLOTTY. Su diseño permite gestionar múltiples roles desde un único punto, asegurando una estructura flexible y escalable. La implementación basada en guards facilita la separación clara entre tipos de usuarios, mientras que el manejo detallado de sesiones y datos del usuario contribuye a una experiencia más personalizada.
 
 Este módulo constituye uno de los pilares fundamentales del Sprint 1, asegurando la seguridad y correcto control de acceso al sistema.
