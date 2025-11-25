@@ -6,6 +6,7 @@ Controlador principal que maneja la autenticación unificada para los tres tipos
 ## 🏗️ Estructura del Controlador
 
 ### Namespace e Imports
+
 ```php
 namespace App\Http\Controllers;
 
@@ -19,6 +20,7 @@ use App\Models\Preregistro;
 ```
 ## Flujo de Autenticación por Capas
 **El sistema intenta autenticar en el siguiente orden: Coordinador → Profesor → Alumno**
+
 ```php
 public function login(Request $request)
 {
