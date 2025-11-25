@@ -32,11 +32,11 @@ Se implementó el sistema de autenticación y autorización, junto con la gesti�
 ### Flujo de Autenticación
 
 ```mermaid
-sequenceDiagram
-    participant U as Usuario
-    participant A as AuthController
-    participant M as Modelos
-    participant G as Guards
+Diagrama de Secuencia
+    participante U as Usuario
+    participante A as AuthController
+    participante M as Modelos
+    participante G as Guards
     
     U->>A: Ingresa credenciales
     A->>M: Buscar Coordinador
