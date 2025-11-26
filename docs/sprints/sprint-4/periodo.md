@@ -1,4 +1,3 @@
-```markdown
 # Periodo Académico - Modelo Principal
 
 ## Descripción General
@@ -155,4 +154,3 @@ La reestructuración centrada en el modelo Periodo transformó significativament
 - Escalabilidad para futuras expansiones del sistema
 
 Esta arquitectura garantiza que cada acción dentro del sistema quede referenciada a un periodo académico específico, proporcionando trazabilidad completa y facilitando la administración institucional.
-```

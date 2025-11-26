@@ -1,4 +1,3 @@
-```markdown
 # Grupo - Gestión de Grupos Académicos
 
 ## Descripción General
@@ -350,4 +349,3 @@ La integración obligatoria con el modelo Periodo transformó significativamente
 - Prevención de operaciones fuera de contexto temporal
 
 Esta arquitectura asegura que cada grupo opere dentro del contexto temporal correcto, proporcionando coherencia organizacional y facilitando la gestión académica institucional a través de relaciones jerárquicas claras y validadas.
-```

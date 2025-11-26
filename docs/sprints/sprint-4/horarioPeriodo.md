@@ -1,4 +1,3 @@
-```markdown
 # HorarioPeriodo - Modelo Pivote de Reestructuración
 
 ## Descripción General
@@ -156,4 +155,3 @@ La implementación del modelo HorarioPeriodo resolvió desafíos críticos de la
 - Capacidad de auditoría y trazabilidad temporal
 
 Esta arquitectura permite que un horario base definido una vez pueda ser reutilizado en múltiples periodos académicos con estados específicos, mientras se mantienen instantáneas inmutables para cada uso contextual. El modelo actúa como puente entre la definición estática de horarios y la ejecución dinámica dentro de periodos académicos específicos, estableciendo las bases para un sistema escalable y mantenible.
-```
