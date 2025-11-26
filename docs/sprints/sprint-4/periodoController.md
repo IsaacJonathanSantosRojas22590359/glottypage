@@ -1,4 +1,3 @@
-```markdown
 # PeriodoController - Controlador Principal del Sistema
 
 ## Descripción General
@@ -430,4 +429,3 @@ El PeriodoController representa la materialización de la reestructuración arqu
 - Reutilización eficiente de recursos mediante horarios contextualizados
 
 Esta arquitectura garantiza que cada operación del sistema quede referenciada a un periodo académico específico, proporcionando trazabilidad completa y facilitando la gestión institucional mediante relaciones jerárquicas claras.
-```
