@@ -10,7 +10,7 @@ Este modelo administra:
 - Relación con preregistros.
 - Campos asignables y sensibles.
 
----
+
 
 # Tabla y Atributos Principales
 
@@ -22,7 +22,7 @@ protected $table = 'usuarios';
 
 El modelo utiliza la tabla `usuarios`.
 
----
+
 
 # Atributos Asignables
 
@@ -50,7 +50,7 @@ Usuario::create($data);
 
 Incluyen información general del usuario, escolaridad, e incluso su tipo dentro del sistema.
 
----
+
 
 # Atributos Ocultos
 
@@ -63,7 +63,7 @@ protected $hidden = [
 ### Explicación
 Evita que el campo `contraseña` aparezca en respuestas JSON o exportaciones, protegiendo información sensible.
 
----
+
 
 # Relaciones
 
@@ -86,7 +86,7 @@ Uso típico:
 $usuario->preregistros;
 ```
 
----
+
 
 # Resumen General
 

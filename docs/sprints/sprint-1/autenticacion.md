@@ -2,7 +2,6 @@
 
 Este documento describe el funcionamiento del sistema de autenticación implementado en el proyecto GLOTTY. Se explica el flujo general, la lógica que sigue el controlador y la estructura del inicio de sesión con múltiples roles (alumno, profesor y coordinador).
 
----
 
 ## Introducción
 
@@ -10,7 +9,6 @@ El sistema de autenticación del proyecto GLOTTY fue diseñado para permitir que
 
 El AuthController centraliza todo el proceso de autenticación, registro de alumnos y cierre de sesión. A continuación se detalla su funcionamiento.
 
----
 
 # Controlador de Autenticación (AuthController)
 
@@ -24,8 +22,6 @@ El AuthController administra las siguientes funciones principales:
 - Visualización del dashboard del coordinador.
 
 A continuación se detalla cada sección del controlador.
-
----
 
 ## Inicio de Sesión Unificado
 
@@ -48,7 +44,6 @@ public function login(Request $request)
 }
 ```
 
----
 
 ## Redirección de Usuarios
 
@@ -71,7 +66,6 @@ private function redirectByGuard($guard)
 }
 ```
 
----
 
 ## Obtención del Nombre del Usuario
 
@@ -86,7 +80,7 @@ private function getUserName($user, $guard)
 }
 ```
 
----
+
 
 ## Obtención del Identificador del Usuario
 
@@ -105,7 +99,7 @@ private function getUserIdentifier($user, $guard)
 }
 ```
 
----
+
 
 ## Registro de Alumnos
 
@@ -122,7 +116,7 @@ public function register(Request $request)
 }
 ```
 
----
+
 
 ## Cierre de Sesión
 
@@ -139,7 +133,7 @@ public function logout(Request $request)
 }
 ```
 
----
+
 
 ## Dashboard del Coordinador
 
@@ -154,7 +148,7 @@ public function coordinadorDashboard()
 }
 ```
 
----
+
 
 ## Vista de Registro
 
@@ -169,10 +163,9 @@ public function showRegisterForm()
 }
 ```
 
----
+
 
 ## Conclusión
 
 Ela AuthController constituye el núcleo de la autenticación del sistema GLOTTY. Su diseño permite gestionar múltiples roles desde un único punto, asegurando una estructura flexible y escalable. La implementación basada en guards facilita la separación clara entre tipos de usuarios, mientras que el manejo detallado de sesiones y datos del usuario contribuye a una experiencia más personalizada.
-
 Este módulo constituye uno de los pilares fundamentales del Sprint 1, asegurando la seguridad y correcto control de acceso al sistema.
