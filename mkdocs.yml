@@ -11,9 +11,13 @@ nav:
       - Resumen: sprints/sprint-1/index.md
       - Autenticación: sprints/sprint-1/autenticacion.md
       - CRUD Profesores: sprints/sprint-1/crud-profesores.md
+      - Modelo Coordinador: sprints/sprint-1/coordinador.md
+      - Modelo Profesor: sprints/sprint-1/profesor.md
+      - Modelo Usuario: sprints/sprint-1/usuario.md
     - Sprint 2:
       - Resumen: sprints/sprint-2/index.md
       - Gestión de Aulas: sprints/sprint-2/aulas.md
+      - Controlador de Aulas: sprints/sprint-2/aulaController.md
       - Administración de Horarios: sprints/sprint-2/horarios.md
     - Sprint 3:
       - Resumen: sprints/sprint-3/index.md
@@ -36,6 +40,7 @@ theme:
 markdown_extensions:
   - tables
   - attr_list
+  - codehilite
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

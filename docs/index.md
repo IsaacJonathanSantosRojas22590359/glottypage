@@ -13,4 +13,4 @@ Sistema de gestión académica desarrollado en Laravel para instituciones educat
 - **Metodología Scrum**
 - **Desarrollo ágil**
 
-[Ver documentación del Sprint 1 →](sprint-1/index.md)
+[Ver documentación del Sprint 1 →](sprints/sprint-1/index.md)

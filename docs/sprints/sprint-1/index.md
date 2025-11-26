@@ -30,27 +30,49 @@ El sistema de autenticación de GLOTTY implementa un sistema unificado multi-rol
 - **Registro seguro** de alumnos con validaciones completas
 - **Redirección inteligente** a dashboards específicos
 
+
 ### Flujo de Autenticación
 
-```mermaid
-sequenceDiagram
-    participant U as Usuario
-    participant A as Controlador de Autenticación
-    participant M as Modelos
-    participant G as Sistema de Sesiones
-    
-    U->>A: Ingresa credenciales
-    A->>M: Buscar coordinador
-    alt Coordinador válido
-        A->>G: Autenticar como coordinador
-        G->>U: Redirigir al dashboard de coordinador
-    else Profesor válido
-        A->>G: Autenticar como profesor
-        G->>U: Redirigir al dashboard de profesor
-    else Alumno válido
-        A->>G: Autenticar como alumno
-        G->>U: Redirigir al dashboard de alumno
-    else Credenciales inválidas
-        A->>U: Mostrar error genérico
-    end
-```
+![Flujo de Autenticación](imagenes/flujoAut.png)
+
+### Explicación del Flujo de Autenticación
+
+El diagrama representa el proceso completo que sigue el sistema GLOTTY cuando un usuario intenta iniciar sesión. Se muestran las interacciones entre cuatro componentes principales:
+
+**1. Inicio del proceso**
+
+El usuario proporciona su correo y contraseña.  
+Estas credenciales se envían al AuthController, que es el responsable de procesarlas.
+
+**2. Búsqueda del usuario en los modelos**
+
+El controlador primero consulta los modelos para intentar identificar qué tipo de usuario está intentando iniciar sesión.  
+La búsqueda inicia con Coordinador, luego Profesor y finalmente Alumno.
+
+**3. Validación por tipo de usuario**
+
+El sistema sigue una secuencia de verificaciones.
+
+
+1. **Coordinador válido**
+
+    Si se encuentra un registro en el modelo de Coordinador y la contraseña coincide, el AuthController inicia sesión usando el guard coordinador.
+
+    Esto permite mantener su sesión separada de otros roles.
+
+2. **Profesor válido**
+
+    Si no es coordinador, el sistema evalúa la tabla de profesores.
+    Si encuentra una coincidencia:
+    El profesor inicia sesión con su propio guard, que posee rutas y vistas independientes.
+
+3. **Alumno válido**
+
+    Si no es profesor, revisa el modelo de alumnos.
+    Si coincide:
+    El guard web se usa para los alumnos, ya que es el estándar en Laravel.
+
+4. **Credenciales inválidas**
+
+    Si no coincide con ninguno de los tres modelos, entonces:
+    Se envía un mensaje indicando que el correo o la contraseña no son correctos.
