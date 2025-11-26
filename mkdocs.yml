@@ -19,23 +19,30 @@ nav:
       - Gestión de Aulas: sprints/sprint-2/aulas.md
       - Controlador de Aulas: sprints/sprint-2/aulaController.md
       - Administración de Horarios: sprints/sprint-2/horarios.md
+      - Controlador de Horarios: sprints/sprint-2/horarioController.md
     - Sprint 3:
       - Resumen: sprints/sprint-3/index.md
-      - Periodos Académicos: sprints/sprint-3/periodos.md
+      - Periodos Académicos: sprints/sprint-3/periodo.md
       - Preregistros: sprints/sprint-3/preregistros.md
-      - Gestión de Grupos: sprints/sprint-3/grupos.md
+      - Gestión de Grupos: sprints/sprint-3/grupo.md
+      - Controlador Grupo: sprints/sprint-3/coordinadorGrupoController.md
+      - Controlador Periodo: sprints/sprint-3/periodoController.md
+      - Controlador Preregistros: sprints/sprint-3/preregistroController.md
     - Sprint 4:
       - Resumen: sprints/sprint-4/index.md
-      - Reestructuración: sprints/sprint-4/reestructuracion.md
-      - Modelos: sprints/sprint-4/modelos.md
+      - R-Grupo: sprints/sprint-4/grupo.md
+      - Horario Periodo: sprints/sprint-4/horarioPeriodo.md
+      - R-Periodo: sprints/sprint-4/periodo.md
+      - R-Controlador Periodo: sprints/sprint-4/periodoController.md
+      - R-Preregistro: sprints/sprint-4/preregistro.md
     - Próximos Sprints: sprints/proximos-sprints.md
   - Equipo: equipo.md
 
 theme:
   name: material
   palette:
-    primary: deep purple
-    accent: blue
+    primary: deep blue
+    accent: red
 
 markdown_extensions:
   - tables
