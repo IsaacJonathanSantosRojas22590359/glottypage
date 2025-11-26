@@ -1,4 +1,3 @@
-```markdown
 # Resumen de la Reestructuración Arquitectónica - Sprint 4
 
 ## Transformación Central
@@ -45,4 +44,3 @@ La separación clara de responsabilidades y las relaciones bien definidas facili
 El sistema ahora opera bajo un flujo coherente donde cada acción académica -desde la asignación de horarios hasta la gestión de grupos y preregistros- queda referenciada a un periodo académico específico. Esto proporciona trazabilidad completa, control de acceso basado en estados y gestión histórica estructurada.
 
 La reestructuración transformó GLOTTY de una colección de módulos independientes a una plataforma académica integrada con arquitectura empresarial sólida, preparada para el crecimiento futuro y el mantenimiento a largo plazo.
-```
