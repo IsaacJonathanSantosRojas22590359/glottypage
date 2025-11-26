@@ -21,3 +21,4 @@ timeline
         Panel de Profesor<br>(Próximo)
     section Sprint 6
         Despliegue Producción<br>(Próximo)
+```
