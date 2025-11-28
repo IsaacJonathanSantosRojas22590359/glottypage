@@ -76,4 +76,4 @@ Todos los módulos desarrollados han sido verificados mediante pruebas manuales 
 El Sistema GLOTTY ha evolucionado desde una base fundamental de seguridad hacia una plataforma académica robusta con arquitectura centrada en periodos académicos. La documentación técnica proporciona información detallada sobre cada componente del sistema para facilitar el mantenimiento y futuras expansiones.
 
 *Documentación mantenida por Isaac Jonathan Santos Rojas - Axolotl Solutions*
-*Última actualización: Diciembre 2025*
+*Última actualización: Noviembre 2025*
