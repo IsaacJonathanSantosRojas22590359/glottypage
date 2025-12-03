@@ -1,11 +1,12 @@
 # Evolución de Desarrollo - Sistema GLOTTY
 
 **Historial de Versiones**
+
 | Versión | Fecha | Autor | Descripción de los Cambios |
 |---------|-------|-------|---------------------------|
 | 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial de la evolución del proyecto |
 | 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregado timeline completo y análisis de impacto |
-| | | | |
+|         |       |                       |                           |
 
 ## Resumen Ejecutivo
 
