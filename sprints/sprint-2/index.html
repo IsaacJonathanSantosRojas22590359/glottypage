@@ -1,0 +1,2075 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación técnica por Axolotl Solutions">
+      
+      
+        <meta name="author" content="Axolotl Solutions">
+      
+      
+        <link rel="canonical" href="https://isaacjonathansantosrojas22590359.github.io/glottypage/sprints/sprint-2/">
+      
+      
+        <link rel="prev" href="../sprint-1/usuario/">
+      
+      
+        <link rel="next" href="aulas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Resumen - Sistema GLOTTY</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-blue" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#resumen-detallado-del-sprint-2-sistema-de-gestion-academica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Sistema GLOTTY" class="md-header__button md-logo" aria-label="Sistema GLOTTY" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sistema GLOTTY
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Resumen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Sistema GLOTTY" class="md-nav__button md-logo" aria-label="Sistema GLOTTY" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Sistema GLOTTY
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolución del Proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprints
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprints
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/autenticacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/crud-profesores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRUD Profesores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/coordinador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Coordinador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/profesor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Profesor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Usuario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-y-alcance-del-sprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos y Alcance del Sprint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulos-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos Implementados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Módulos Implementados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sistema-de-gestion-de-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sistema de Gestión de Aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sistema-de-gestion-de-horarios-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sistema de Gestión de Horarios Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sistema-de-gestion-de-periodos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sistema de Gestión de Periodos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-sistema-de-gestion-de-grupos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Sistema de Gestión de Grupos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-sistema-de-preregistro-de-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Sistema de Preregistro de Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-tecnicas-implementadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características Técnicas Implementadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características Técnicas Implementadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-y-patrones-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura y Patrones de Diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validaciones-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validaciones y Seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manejo-de-transacciones-y-consistencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manejo de Transacciones y Consistencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-logging-y-auditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Logging y Auditoría
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujos-de-trabajo-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujos de Trabajo Principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujos de Trabajo Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-configuracion-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Configuración Académica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-preregistro-y-asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Preregistro y Asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-ejecucion-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Ejecución Académica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integraciones-y-relaciones-entre-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones y Relaciones entre Módulos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion-para-sprints-futuros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparación para Sprints Futuros
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión de Aulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aulaController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador de Aulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="horarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administración de Horarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="horarioController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador de Horarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/periodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Periodos Académicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/preregistros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preregistros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión de Grupos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/coordinadorGrupoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Grupo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/periodoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-3/preregistroController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Preregistros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Grupo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/horarioPeriodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horario Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/periodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/periodoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Controlador Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/preregistro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Preregistro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proximos-sprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Próximos Sprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../equipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-y-alcance-del-sprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos y Alcance del Sprint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulos-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos Implementados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Módulos Implementados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sistema-de-gestion-de-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sistema de Gestión de Aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sistema-de-gestion-de-horarios-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sistema de Gestión de Horarios Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sistema-de-gestion-de-periodos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sistema de Gestión de Periodos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-sistema-de-gestion-de-grupos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Sistema de Gestión de Grupos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-sistema-de-preregistro-de-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Sistema de Preregistro de Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-tecnicas-implementadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características Técnicas Implementadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características Técnicas Implementadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-y-patrones-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura y Patrones de Diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validaciones-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validaciones y Seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manejo-de-transacciones-y-consistencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manejo de Transacciones y Consistencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-logging-y-auditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Logging y Auditoría
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujos-de-trabajo-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujos de Trabajo Principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujos de Trabajo Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-configuracion-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Configuración Académica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-preregistro-y-asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Preregistro y Asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-ejecucion-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Ejecución Académica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integraciones-y-relaciones-entre-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones y Relaciones entre Módulos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion-para-sprints-futuros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparación para Sprints Futuros
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="resumen-detallado-del-sprint-2-sistema-de-gestion-academica">Resumen Detallado del Sprint 2 - Sistema de Gestión Académica</h1>
+<p><strong>Historial de Versiones</strong>
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 2 |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregada documentación del modelo Aula |
+| | | | |</p>
+<h2 id="objetivos-y-alcance-del-sprint">Objetivos y Alcance del Sprint</h2>
+<p>El Sprint 2 se centró en el desarrollo completo de los módulos fundamentales para la gestión académica del sistema. Se implementaron cinco componentes principales que forman la base operativa del sistema de coordinación de cursos de inglés. Cada módulo fue diseñado con validaciones robustas, flujos de trabajo definidos y una arquitectura escalable que permite la gestión integral del ciclo académico.</p>
+<h2 id="modulos-implementados">Módulos Implementados</h2>
+<h3 id="1-sistema-de-gestion-de-aulas">1. Sistema de Gestión de Aulas</h3>
+<p>Se desarrolló un sistema completo para la administración de espacios físicos académicos. El modelo Aula incorpora diferentes tipos de espacios educativos con capacidades específicas y sistema de disponibilidad. El controlador correspondiente maneja operaciones CRUD completas con validaciones avanzadas que previenen conflictos operativos.</p>
+<p>Las aulas pueden ser de cuatro tipos: aulas regulares, laboratorios, salas de cómputo y aulas audiovisuales, cada una con características específicas. El sistema incluye validación de capacidad que garantiza que no se reduzca la capacidad de un aula por debajo de lo requerido por los grupos actualmente asignados. Además, se implementó una API para consultar la disponibilidad de aulas en horarios específicos, facilitando la asignación inteligente de espacios.</p>
+<h3 id="2-sistema-de-gestion-de-horarios-base">2. Sistema de Gestión de Horarios Base</h3>
+<p>Se creó un módulo especializado para la administración de horarios académicos base. Este sistema distingue entre horarios semanales (lunes a viernes) y sabatinos (exclusivamente sábados), con validaciones estrictas que aseguran la coherencia entre el tipo de horario y los días asignados.</p>
+<p>El modelo Horario incluye funcionalidades para gestionar la activación y desactivación de horarios, así como prevención de modificaciones o eliminaciones cuando los horarios están siendo utilizados en periodos activos. El controlador implementa flujos de trabajo completos para creación, edición y eliminación con validaciones de integridad referencial.</p>
+<h3 id="3-sistema-de-gestion-de-periodos-academicos">3. Sistema de Gestión de Periodos Académicos</h3>
+<p>Se implementó un módulo comprehensivo para la administración de periodos académicos, que constituye el núcleo del ciclo educativo. Los periodos siguen un flujo de estado definido que incluye seis estados: configuración, preregistros activos, preregistros cerrados, en curso, finalizado y cancelado.</p>
+<p>El sistema incluye transiciones controladas entre estados con validaciones de dependencias. Por ejemplo, para activar los preregistros de un periodo, el sistema verifica que existan horarios activos, aulas disponibles y profesores registrados. El controlador de periodos maneja automatizaciones que sincronizan el estado de grupos y estudiantes cuando un periodo cambia de estado.</p>
+<h3 id="4-sistema-de-gestion-de-grupos-academicos">4. Sistema de Gestión de Grupos Académicos</h3>
+<p>Se desarrolló un módulo completo para la creación y administración de grupos de estudio. Los grupos evolucionan a través de seis estados: planificado, con profesor, con aula, activo, en curso y finalizado/cancelado. El sistema determina automáticamente el estado del grupo basado en las asignaciones de profesor y aula.</p>
+<p>El modelo Grupo incluye validaciones avanzadas para detectar conflictos de horario entre profesores y aulas. El controlador proporciona funcionalidades para asignar y remover estudiantes de grupos, con validaciones de capacidad y verificación de que los estudiantes estén aptos para ser asignados. El sistema también gestiona la capacidad de los grupos, previniendo que se reduzca por debajo del número de estudiantes actualmente inscritos.</p>
+<h3 id="5-sistema-de-preregistro-de-estudiantes">5. Sistema de Preregistro de Estudiantes</h3>
+<p>Se implementó un módulo para el preregistro de estudiantes en periodos académicos activos. Los preregistros siguen un flujo de cinco estados: pendiente, asignado, cursando, finalizado y cancelado. El sistema incluye gestión de estados de pago, incorporando el concepto de prórroga como estado intermedio entre pendiente y pagado.</p>
+<p>El modelo Preregistro valida que los estudiantes no tengan múltiples preregistros activos en el mismo periodo. El controlador proporciona interfaces para que los estudiantes realicen preregistros, seleccionen su nivel deseado y horario preferido, y realicen seguimiento a su estado de asignación.</p>
+<h2 id="caracteristicas-tecnicas-implementadas">Características Técnicas Implementadas</h2>
+<h3 id="arquitectura-y-patrones-de-diseno">Arquitectura y Patrones de Diseño</h3>
+<p>El sistema sigue el patrón MVC (Modelo-Vista-Controlador) de Laravel, con una clara separación de responsabilidades. Los modelos contienen la lógica de negocio y validaciones, los controladores gestionan los flujos de trabajo, y las vistas presentan la interfaz de usuario. Se implementó el uso de scopes para consultas frecuentes, accessors para formateo de datos, y relaciones Eloquent para la gestión de asociaciones entre entidades.</p>
+<h3 id="validaciones-y-seguridad">Validaciones y Seguridad</h3>
+<p>Se implementaron múltiples capas de validación: validaciones de formulario usando el sistema de validación de Laravel, validaciones de negocio en los modelos, y validaciones de integridad referencial en la base de datos. El sistema incluye control de acceso basado en autenticación y autorización por roles, asegurando que los usuarios solo accedan a funcionalidades y datos apropiados para su perfil.</p>
+<h3 id="manejo-de-transacciones-y-consistencia">Manejo de Transacciones y Consistencia</h3>
+<p>Para operaciones críticas que involucran múltiples actualizaciones en la base de datos, se implementó el uso de transacciones. Esto garantiza la consistencia de los datos en casos como la asignación de estudiantes a grupos, donde se deben actualizar tanto el contador de estudiantes en el grupo como el estado del preregistro del estudiante.</p>
+<h3 id="sistema-de-logging-y-auditoria">Sistema de Logging y Auditoría</h3>
+<p>Se incorporó un sistema comprehensivo de logging que registra operaciones importantes del sistema, proporcionando información contextual para debugging y auditoría. Los logs incluyen detalles como el usuario que realizó la acción, los datos involucrados y el resultado de la operación.</p>
+<h2 id="flujos-de-trabajo-principales">Flujos de Trabajo Principales</h2>
+<h3 id="flujo-de-configuracion-academica">Flujo de Configuración Académica</h3>
+<p>El sistema soporta un flujo completo de configuración que inicia con la creación de periodos académicos, seguido por la asignación de horarios disponibles para ese periodo, la creación de grupos por nivel, y finalmente la activación de preregistros para que los estudiantes puedan inscribirse.</p>
+<h3 id="flujo-de-preregistro-y-asignacion">Flujo de Preregistro y Asignación</h3>
+<p>Los estudiantes realizan preregistros seleccionando su nivel deseado y horario preferido. Una vez que el periodo cierra los preregistros, el coordinador asigna estudiantes a grupos considerando sus preferencias y la capacidad disponible. El sistema valida que los estudiantes tengan su pago en orden antes de permitir la asignación.</p>
+<h3 id="flujo-de-ejecucion-academica">Flujo de Ejecución Académica</h3>
+<p>Cuando un periodo inicia, el sistema automáticamente actualiza el estado de los grupos y estudiantes a "en curso". Durante el periodo, se pueden realizar ajustes en la asignación de estudiantes. Al finalizar el periodo, el sistema actualiza los estados a "finalizado" y genera las estadísticas correspondientes.</p>
+<h2 id="integraciones-y-relaciones-entre-modulos">Integraciones y Relaciones entre Módulos</h2>
+<p>Los módulos implementados están interconectados a través de relaciones definidas en los modelos. Los periodos contienen horarios y grupos, los grupos pertenecen a periodos y tienen asignados aulas y profesores, y los preregistros están asociados a periodos y pueden ser asignados a grupos. Esta estructura relacional permite una gestión coherente y centralizada de la información académica.</p>
+<h2 id="preparacion-para-sprints-futuros">Preparación para Sprints Futuros</h2>
+<p>La arquitectura implementada en el Sprint 2 establece las bases para funcionalidades avanzadas que se desarrollarán en sprints posteriores. Los modelos y controladores están diseñados para extenderse con características como asignación automática de estudiantes, generación de horarios complejos, sistema de evaluaciones, y reportes analíticos avanzados.</p>
+<p>El sistema resultante del Sprint 2 representa una plataforma robusta y escalable para la gestión académica, con validaciones comprehensivas que previenen errores operativos y una experiencia de usuario optimizada para los diferentes roles involucrados en el proceso educativo.</p>
+<h1 id="resumen-sprint-2-sistema-de-gestion-academica">Resumen Sprint 2 - Sistema de Gestión Académica</h1>
+<h2 id="objetivos-cumplidos">Objetivos Cumplidos</h2>
+<h3 id="modulo-de-aulas-completado"><strong>Módulo de Aulas Completado</strong></h3>
+<ul>
+<li><strong>Gestión completa de espacios físicos</strong> (AulaController)</li>
+<li><strong>Modelo Aula con relaciones y validaciones</strong> </li>
+<li><strong>Sistema de disponibilidad y capacidad</strong></li>
+<li><strong>API para consulta de aulas disponibles</strong></li>
+</ul>
+<h3 id="modulo-de-horarios-completado"><strong>Módulo de Horarios Completado</strong></h3>
+<ul>
+<li><strong>Gestión de horarios base</strong> (HorarioController)</li>
+<li><strong>Modelo Horario con tipos semanal/sabatino</strong></li>
+<li><strong>Validaciones de integridad y reglas de negocio</strong></li>
+<li><strong>Sistema de periodos activos</strong></li>
+</ul>
+<h2 id="arquitectura-implementada">Arquitectura Implementada</h2>
+<h3 id="controladores-desarrollados"><strong>Controladores Desarrollados</strong></h3>
+<h4 id="aulacontroller-apphttpcontrollersaulacontrollerphp"><strong>AulaController</strong> (<code>app/Http/Controllers/AulaController.php</code>)</h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">Métodos Principales:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="x">- index()    → Lista con filtros (edificio, tipo, disponibilidad)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">- create()   → Formulario creación</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">- store()    → Almacenamiento con validaciones</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="x">- edit()     → Edición con información de uso</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">- update()   → Actualización con validación de capacidad</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">- destroy()  → Eliminación con verificación de grupos</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="x">- show()     → Vista detallada con estadísticas</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="x">- toggleDisponible() → Cambio estado disponible</span>
+</span></code></pre></div>
+<h4 id="horariocontroller-apphttpcontrollershorariocontrollerphp"><strong>HorarioController</strong> (<code>app/Http/Controllers/HorarioController.php</code>)</h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">Métodos Principales:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="x">- index()    → Lista con estadísticas</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="x">- create()   → Formulario con días según tipo</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="x">- store()    → Creación con validaciones específicas</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="x">- edit()     → Edición con restricciones de uso</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="x">- update()   → Actualización con validaciones</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="x">- destroy()  → Eliminación controlada</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="x">- toggleActivo() → Activación/desactivación</span>
+</span></code></pre></div>
+<h3 id="modelos-implementados"><strong>Modelos Implementados</strong></h3>
+<h4 id="modelo-aula-appmodelsaulaphp"><strong>Modelo Aula</strong> (<code>app/Models/Aula.php</code>)</h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">Características:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">- Tipos de aula: regular, laboratorio, cómputo, audiovisual</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">- Relación hasMany con Grupos</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">- Scopes: disponibles(), porTipo(), porEdificio()</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">- Métodos: estaDisponibleEnHorario(), soportaCapacidad()</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">- Accessors: nombre_completo, tipo_formateado, info_resumida</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">- API: disponiblesParaHorario()</span>
+</span></code></pre></div>
+<h4 id="modelo-horario-appmodelshorariophp"><strong>Modelo Horario</strong> (<code>app/Models/Horario.php</code>)</h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">Características:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">- Tipos: semanal, sabatino</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="x">- Casts: días como array, horas como Carbon</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">- Relaciones: horariosPeriodo(), periodosActivos()</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x">- Scopes: activos(), semanales(), sabatinos()</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="x">- Validaciones: sePuedeEliminar(), enUsoEnPeriodosActivos()</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="x">- Accessors: dias_formateados, horario_completo, duracion</span>
+</span></code></pre></div>
+<h2 id="funcionalidades-clave-implementadas">Funcionalidades Clave Implementadas</h2>
+<h3 id="sistema-de-validaciones-avanzadas"><strong>Sistema de Validaciones Avanzadas</strong></h3>
+<h4 id="para-aulas"><strong>Para Aulas:</strong></h4>
+<ul>
+<li>Capacidad no menor a grupos existentes</li>
+<li>No eliminar/desactivar con grupos activos</li>
+<li>Nombre único por aula</li>
+<li>Capacidad entre 1-200 estudiantes</li>
+</ul>
+<h4 id="para-horarios"><strong>Para Horarios:</strong></h4>
+<ul>
+<li>Coherencia días/tipo (sabatino=solo sábado, semanal=sin sábado)</li>
+<li>Horario fin después de inicio</li>
+<li>No editar/eliminar en periodos activos</li>
+<li>Nombre único por horario</li>
+</ul>
+<h3 id="sistema-de-consultas-y-scopes"><strong>Sistema de Consultas y Scopes</strong></h3>
+<h4 id="aulas"><strong>Aulas:</strong></h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="x">Aula::disponibles()-&gt;porTipo(&#39;laboratorio&#39;)-&gt;get();</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="x">Aula::disponiblesParaHorario($horarioId, $capacidad);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="x">$aula-&gt;estaDisponibleEnHorario($horarioId);</span>
+</span></code></pre></div>
+<h4 id="horarios"><strong>Horarios:</strong></h4>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x">Horario::activos()-&gt;semanales()-&gt;get();</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="x">Horario::sabatinos()-&gt;get();</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="x">$horario-&gt;enUsoEnPeriodosActivos();</span>
+</span></code></pre></div>
+<h3 id="api-y-integraciones"><strong>API y Integraciones</strong></h3>
+<ul>
+<li>Endpoint JSON para aulas disponibles por horario</li>
+<li>Estadísticas en tiempo real para dashboards</li>
+<li>Sistema de logs para auditoría</li>
+</ul>
+<h2 id="caracteristicas-de-seguridad">Características de Seguridad</h2>
+<h3 id="manejo-de-transacciones"><strong>Manejo de Transacciones</strong></h3>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="x">DB::beginTransaction();</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="x">try {</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="x">    // Operaciones críticas</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="x">    DB::commit();</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="x">} catch (\Exception $e) {</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="x">    DB::rollBack();</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="x">}</span>
+</span></code></pre></div>
+<h3 id="validaciones-multi-nivel"><strong>Validaciones Multi-nivel</strong></h3>
+<ol>
+<li><strong>Validación de Formulario</strong> (Laravel Validation)</li>
+<li><strong>Validación de Negocio</strong> (Métodos personalizados)</li>
+<li><strong>Validación de Integridad</strong> (Relaciones y constraints)</li>
+</ol>
+<h3 id="manejo-de-errores"><strong>Manejo de Errores</strong></h3>
+<ul>
+<li>Logging detallado con contexto</li>
+<li>Mensajes de error específicos al usuario</li>
+<li>Respuestas JSON para APIs</li>
+</ul>
+<h2 id="sistema-de-vistas-y-ux">Sistema de Vistas y UX</h2>
+<h3 id="vistas-implementadas"><strong>Vistas Implementadas</strong></h3>
+<ul>
+<li><code>coordinador.aulas.index</code> → Lista con filtros</li>
+<li><code>coordinador.aulas.create</code> → Formulario creación</li>
+<li><code>coordinador.aulas.edit</code> → Edición con información contextual</li>
+<li><code>coordinador.aulas.show</code> → Vista detallada con estadísticas</li>
+<li><code>coordinador.horarios.*</code> → Vistas equivalentes para horarios</li>
+</ul>
+<h3 id="experiencia-de-usuario"><strong>Experiencia de Usuario</strong></h3>
+<ul>
+<li>Filtros dinámicos en listados</li>
+<li>Mensajes flash de éxito/error</li>
+<li>Formularios con validación en tiempo real</li>
+<li>Información contextual en edición</li>
+<li>Prevención de acciones inválidas</li>
+</ul>
+<h2 id="metricas-y-estadisticas">Métricas y Estadísticas</h2>
+<h3 id="para-aulas_1"><strong>Para Aulas:</strong></h3>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="x">[</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="x">    &#39;total_grupos&#39;,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="x">    &#39;grupos_activos&#39;, </span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="x">    &#39;ocupacion_promedio&#39;,</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="x">    &#39;capacidad_utilizada&#39;,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="x">    &#39;horarios_ocupados&#39;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="x">]</span>
+</span></code></pre></div>
+<h3 id="para-horarios_1"><strong>Para Horarios:</strong></h3>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x">[</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="x">    &#39;total&#39;,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="x">    &#39;activos&#39;,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="x">    &#39;semanales&#39;,</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="x">    &#39;sabatinos&#39;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="x">]</span>
+</span></code></pre></div>
+<h2 id="flujos-de-trabajo-completados">Flujos de Trabajo Completados</h2>
+<h3 id="gestion-de-aulas"><strong>Gestión de Aulas:</strong></h3>
+<ol>
+<li>Crear aula → Validar → Transacción → Confirmar</li>
+<li>Editar aula → Verificar capacidad → Actualizar → Log</li>
+<li>Eliminar aula → Verificar grupos → Eliminar → Confirmar</li>
+<li>Cambiar disponibilidad → Verificar grupos → Actualizar → Notificar</li>
+</ol>
+<h3 id="gestion-de-horarios"><strong>Gestión de Horarios:</strong></h3>
+<ol>
+<li>Crear horario → Validar tipo/días → Crear → Log</li>
+<li>Editar horario → Verificar uso → Validar → Actualizar</li>
+<li>Eliminar horario → Verificar periodos → Eliminar → Confirmar</li>
+<li>Cambiar estado → Actualizar → Log → Notificar</li>
+</ol>
+<h2 id="resultados-del-sprint">Resultados del Sprint</h2>
+<h3 id="funcionalidades-entregadas">** Funcionalidades Entregadas:**</h3>
+<ul>
+<li>[x] CRUD completo para Aulas</li>
+<li>[x] CRUD completo para Horarios  </li>
+<li>[x] Sistema de validaciones de negocio</li>
+<li>[x] API para consultas de disponibilidad</li>
+<li>[x] Sistema de estadísticas y reporting</li>
+<li>[x] Interfaz de usuario completa</li>
+<li>[x] Manejo de errores y logging</li>
+<li>[x] Documentación técnica completa</li>
+</ul>
+<h3 id="proximos-pasos-sprint-3">** Próximos Pasos (Sprint 3):**</h3>
+<ul>
+<li>Integración con módulo de Grupos</li>
+<li>Sistema de asignación automática</li>
+<li>Conflictos de horarios y aulas</li>
+<li>Reportes avanzados</li>
+<li>Optimización de rendimiento</li>
+</ul>
+<p><strong>Estado del Sprint</strong>:  <strong>COMPLETADO</strong><br />
+<strong>Calidad de Código</strong>:  <strong>ALTA</strong> (Validaciones robustas, arquitectura sólida)<br />
+<strong>Documentación</strong>: <strong>COMPLETA</strong> (Modelos, controladores, flujos)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

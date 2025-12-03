@@ -1,0 +1,2338 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación técnica por Axolotl Solutions">
+      
+      
+        <meta name="author" content="Axolotl Solutions">
+      
+      
+        <link rel="canonical" href="https://isaacjonathansantosrojas22590359.github.io/glottypage/sprints/sprint-3/">
+      
+      
+        <link rel="prev" href="../sprint-2/horarioController/">
+      
+      
+        <link rel="next" href="periodo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Resumen - Sistema GLOTTY</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-blue" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#resumen-general-del-sistema-de-gestion-academica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Sistema GLOTTY" class="md-header__button md-logo" aria-label="Sistema GLOTTY" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sistema GLOTTY
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Resumen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Sistema GLOTTY" class="md-nav__button md-logo" aria-label="Sistema GLOTTY" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Sistema GLOTTY
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolución del Proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprints
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprints
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/autenticacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/crud-profesores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRUD Profesores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/coordinador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Coordinador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/profesor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Profesor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-1/usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Usuario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-2/aulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión de Aulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-2/aulaController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador de Aulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-2/horarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administración de Horarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-2/horarioController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador de Horarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura del Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-mvc-implementada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura MVC Implementada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulos-principales-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos Principales Implementados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Módulos Principales Implementados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gestion-de-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Gestión de Aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gestion-de-horarios-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gestión de Horarios Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gestion-de-periodos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gestión de Periodos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gestion-de-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Gestión de Grupos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gestion-de-preregistros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gestión de Preregistros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-tecnicas-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características Técnicas Comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características Técnicas Comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validaciones-implementadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validaciones Implementadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad-y-control-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad y Control de Acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manejo-de-transacciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manejo de Transacciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujos-de-trabajo-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujos de Trabajo Principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujos de Trabajo Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configuracion-de-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Configuración de Periodo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-preregistro-de-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Preregistro de Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gestion-de-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gestión de Grupos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ciclo-de-vida-academico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ciclo de Vida Académico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estados-y-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados y Transiciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estados y Transiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodos-6-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Periodos (6 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupos-6-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupos (6 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preregistros-5-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preregistros (5 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integraciones-y-relaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones y Relaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integraciones y Relaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relaciones-entre-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relaciones entre Modelos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencias del Sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-de-usabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características de Usabilidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características de Usabilidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-coordinadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Coordinadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-y-estadisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métricas y Estadísticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas y Estadísticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disponibles-en-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disponibles en el Sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="periodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Periodos Académicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="preregistros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preregistros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión de Grupos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coordinadorGrupoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Grupo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="periodoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="preregistroController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador Preregistros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Grupo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/horarioPeriodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horario Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/periodo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/periodoController/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Controlador Periodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint-4/preregistro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R-Preregistro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proximos-sprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Próximos Sprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../equipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura del Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-mvc-implementada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura MVC Implementada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulos-principales-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos Principales Implementados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Módulos Principales Implementados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gestion-de-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Gestión de Aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gestion-de-horarios-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gestión de Horarios Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gestion-de-periodos-academicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gestión de Periodos Académicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gestion-de-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Gestión de Grupos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gestion-de-preregistros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gestión de Preregistros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-tecnicas-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características Técnicas Comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características Técnicas Comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validaciones-implementadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validaciones Implementadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad-y-control-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad y Control de Acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manejo-de-transacciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manejo de Transacciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujos-de-trabajo-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujos de Trabajo Principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujos de Trabajo Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configuracion-de-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Configuración de Periodo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-preregistro-de-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Preregistro de Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gestion-de-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gestión de Grupos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ciclo-de-vida-academico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ciclo de Vida Académico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estados-y-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados y Transiciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estados y Transiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodos-6-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Periodos (6 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupos-6-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupos (6 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preregistros-5-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preregistros (5 estados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integraciones-y-relaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones y Relaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integraciones y Relaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relaciones-entre-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relaciones entre Modelos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencias del Sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-de-usabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características de Usabilidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características de Usabilidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-coordinadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Coordinadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-estudiantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Estudiantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-y-estadisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métricas y Estadísticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas y Estadísticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disponibles-en-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disponibles en el Sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="resumen-general-del-sistema-de-gestion-academica">Resumen General del Sistema de Gestión Académica</h1>
+<p><strong>Historial de Versiones</strong>
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 3 |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregados modelos Periodo y Preregistro |
+| | | | |</p>
+<h2 id="arquitectura-del-sistema">Arquitectura del Sistema</h2>
+<h3 id="estructura-mvc-implementada">Estructura MVC Implementada</h3>
+<p>El sistema sigue el patrón Modelo-Vista-Controlador (MVC) de Laravel, con una clara separación de responsabilidades:</p>
+<ul>
+<li><strong>Modelos</strong>: Gestionan datos y lógica de negocio</li>
+<li><strong>Controladores</strong>: Manejan la lógica de aplicación y flujos de trabajo</li>
+<li><strong>Vistas</strong>: Presentan la interfaz de usuario</li>
+</ul>
+<h2 id="modulos-principales-implementados">Módulos Principales Implementados</h2>
+<h3 id="1-gestion-de-aulas">1. Gestión de Aulas</h3>
+<p><strong>Modelo</strong>: <code>Aula</code>
+<strong>Controlador</strong>: <code>AulaController</code></p>
+<p><strong>Funcionalidades</strong>:
+- CRUD completo de aulas académicas
+- Gestión de capacidad (15-200 estudiantes)
+- Tipos de aula: regular, laboratorio, cómputo, audiovisual
+- Sistema de disponibilidad y horarios ocupados
+- Validación de capacidad vs grupos asignados
+- API para consulta de aulas disponibles</p>
+<p><strong>Estados</strong>: disponible/no disponible</p>
+<h3 id="2-gestion-de-horarios-base">2. Gestión de Horarios Base</h3>
+<p><strong>Modelo</strong>: <code>Horario</code>
+<strong>Controlador</strong>: <code>HorarioController</code></p>
+<p><strong>Funcionalidades</strong>:
+- CRUD de horarios base (semanal/sabatino)
+- Validación de días según tipo (semanal: L-V, sabatino: solo sábado)
+- Prevención de edición/eliminación en periodos activos
+- Sistema de activación/desactivación</p>
+<p><strong>Estados</strong>: activo/inactivo</p>
+<h3 id="3-gestion-de-periodos-academicos">3. Gestión de Periodos Académicos</h3>
+<p><strong>Modelo</strong>: <code>Periodo</code>
+<strong>Controlador</strong>: <code>PeriodoController</code></p>
+<p><strong>Funcionalidades</strong>:
+- CRUD de periodos académicos
+- Gestión de estados del periodo (6 estados)
+- Transiciones controladas entre estados
+- Validación de dependencias (horarios, aulas, profesores)
+- Automatización de estados de grupos y estudiantes</p>
+<p><strong>Estados</strong>: 
+- configuración → preregistros_activos → preregistros_cerrados → en_curso → finalizado/cancelado</p>
+<h3 id="4-gestion-de-grupos">4. Gestión de Grupos</h3>
+<p><strong>Modelo</strong>: <code>Grupo</code>
+<strong>Controlador</strong>: <code>CoordinadorGrupoController</code></p>
+<p><strong>Funcionalidades</strong>:
+- CRUD de grupos académicos
+- Asignación de estudiantes a grupos
+- Validación de capacidad y conflictos de horario
+- Estados automáticos según asignaciones
+- Gestión de profesores y aulas</p>
+<p><strong>Estados</strong>: planificado → con_profesor → con_aula → activo → en_curso → finalizado/cancelado</p>
+<h3 id="5-gestion-de-preregistros">5. Gestión de Preregistros</h3>
+<p><strong>Modelo</strong>: <code>Preregistro</code>
+<strong>Controlador</strong>: <code>PreregistroController</code></p>
+<p><strong>Funcionalidades</strong>:
+- Preregistro de estudiantes en periodos activos
+- Gestión de estados de pago (incluye prórroga)
+- Asignación automática a grupos
+- Sincronización con estados del periodo
+- Validación de unicidad por periodo</p>
+<p><strong>Estados</strong>: pendiente → asignado → cursando → finalizado/cancelado</p>
+<h2 id="caracteristicas-tecnicas-comunes">Características Técnicas Comunes</h2>
+<h3 id="validaciones-implementadas">Validaciones Implementadas</h3>
+<ul>
+<li><strong>Validaciones de formulario</strong>: Reglas Laravel estándar</li>
+<li><strong>Validaciones de negocio</strong>: Lógica personalizada en modelos</li>
+<li><strong>Validaciones de integridad</strong>: Prevención de operaciones inválidas</li>
+<li><strong>Validaciones de estado</strong>: Control de transiciones entre estados</li>
+</ul>
+<h3 id="seguridad-y-control-de-acceso">Seguridad y Control de Acceso</h3>
+<ul>
+<li><strong>Autenticación requerida</strong> para todas las operaciones</li>
+<li><strong>Autorización por roles</strong> (coordinador, estudiante)</li>
+<li><strong>Verificación de propiedad</strong> de datos</li>
+<li><strong>Prevención de operaciones inválidas</strong> según estado</li>
+</ul>
+<h3 id="manejo-de-transacciones">Manejo de Transacciones</h3>
+<ul>
+<li><strong>Operaciones críticas</strong> usan transacciones de base de datos</li>
+<li><strong>Consistencia garantizada</strong> en operaciones múltiples</li>
+<li><strong>Rollback automático</strong> en caso de errores</li>
+</ul>
+<h3 id="sistema-de-logging">Sistema de Logging</h3>
+<ul>
+<li><strong>Registro de operaciones</strong> importantes</li>
+<li><strong>Información contextual</strong> para debugging</li>
+<li><strong>Auditoría</strong> de cambios en el sistema</li>
+</ul>
+<h2 id="flujos-de-trabajo-principales">Flujos de Trabajo Principales</h2>
+<h3 id="1-configuracion-de-periodo">1. Configuración de Periodo</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Crear periodo → Agregar horarios → Activar preregistros
+</span></code></pre></div>
+<h3 id="2-preregistro-de-estudiantes">2. Preregistro de Estudiantes</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Periodo activo → Preregistro estudiante → Pago → Asignación a grupo
+</span></code></pre></div>
+<h3 id="3-gestion-de-grupos">3. Gestión de Grupos</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Crear grupo → Asignar profesor/aula → Asignar estudiantes → Activar grupo
+</span></code></pre></div>
+<h3 id="4-ciclo-de-vida-academico">4. Ciclo de Vida Académico</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Inicio periodo → Grupos activos → Estudiantes cursando → Finalización
+</span></code></pre></div>
+<h2 id="estados-y-transiciones">Estados y Transiciones</h2>
+<h3 id="periodos-6-estados">Periodos (6 estados)</h3>
+<ul>
+<li><strong>configuración</strong>: Configuración inicial</li>
+<li><strong>preregistros_activos</strong>: Aceptando preregistros</li>
+<li><strong>preregistros_cerrados</strong>: Preregistros cerrados</li>
+<li><strong>en_curso</strong>: Periodo activo</li>
+<li><strong>finalizado</strong>: Periodo completado</li>
+<li><strong>cancelado</strong>: Periodo cancelado</li>
+</ul>
+<h3 id="grupos-6-estados">Grupos (6 estados)</h3>
+<ul>
+<li><strong>planificado</strong>: Creado sin asignaciones</li>
+<li><strong>con_profesor</strong>: Profesor asignado</li>
+<li><strong>con_aula</strong>: Aula asignada</li>
+<li><strong>activo</strong>: Listo para estudiantes</li>
+<li><strong>en_curso</strong>: Impartiendo clases</li>
+<li><strong>finalizado/cancelado</strong>: Estados finales</li>
+</ul>
+<h3 id="preregistros-5-estados">Preregistros (5 estados)</h3>
+<ul>
+<li><strong>pendiente</strong>: Esperando asignación</li>
+<li><strong>asignado</strong>: Asignado a grupo</li>
+<li><strong>cursando</strong>: Activo en clases</li>
+<li><strong>finalizado</strong>: Curso completado</li>
+<li><strong>cancelado</strong>: Preregistro cancelado</li>
+</ul>
+<h2 id="integraciones-y-relaciones">Integraciones y Relaciones</h2>
+<h3 id="relaciones-entre-modelos">Relaciones entre Modelos</h3>
+<ul>
+<li><strong>Periodo</strong> ↔ <strong>HorarioPeriodo</strong> ↔ <strong>Horario</strong> (Base)</li>
+<li><strong>Periodo</strong> ↔ <strong>Grupo</strong> ↔ <strong>Aula</strong> ↔ <strong>Profesor</strong></li>
+<li><strong>Periodo</strong> ↔ <strong>Preregistro</strong> ↔ <strong>Usuario</strong> (Estudiante)</li>
+<li><strong>Grupo</strong> ↔ <strong>Preregistro</strong> (Estudiantes asignados)</li>
+</ul>
+<h3 id="dependencias-del-sistema">Dependencias del Sistema</h3>
+<ul>
+<li><strong>Para activar preregistros</strong>: Horarios + Aulas + Profesores</li>
+<li><strong>Para activar grupos</strong>: Profesor + Aula + Capacidad</li>
+<li><strong>Para asignar estudiantes</strong>: Preregistro pagado + Capacidad disponible</li>
+</ul>
+<h2 id="caracteristicas-de-usabilidad">Características de Usabilidad</h2>
+<h3 id="para-coordinadores">Para Coordinadores</h3>
+<ul>
+<li>Interfaces administrativas completas</li>
+<li>Filtros y búsquedas avanzadas</li>
+<li>Estadísticas en tiempo real</li>
+<li>Validaciones preventivas</li>
+</ul>
+<h3 id="para-estudiantes">Para Estudiantes</h3>
+<ul>
+<li>Interfaz simplificada de preregistro</li>
+<li>Seguimiento de estado de solicitudes</li>
+<li>Información clara de grupos asignados</li>
+</ul>
+<h2 id="metricas-y-estadisticas">Métricas y Estadísticas</h2>
+<h3 id="disponibles-en-el-sistema">Disponibles en el Sistema</h3>
+<ul>
+<li>Ocupación de aulas y grupos</li>
+<li>Distribución por niveles</li>
+<li>Estados de preregistros y pagos</li>
+<li>Eficiencia de utilización de recursos</li>
+</ul>
+<p>Este sistema proporciona una plataforma completa para la gestión académica de cursos de inglés, con validaciones robustas, automatizaciones inteligentes y una interfaz adecuada para los diferentes roles de usuario.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
