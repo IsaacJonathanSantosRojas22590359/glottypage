@@ -1,5 +1,12 @@
 # Documentación del Sistema de Autenticación Unificado
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación técnica completa del AuthController |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregada documentación de modelos relacionados |
+| | | | |
+
 Este documento describe el funcionamiento del sistema de autenticación implementado en el proyecto GLOTTY. Se explica el flujo general, la lógica que sigue el controlador y la estructura del inicio de sesión con múltiples roles (alumno, profesor y coordinador).
 
 

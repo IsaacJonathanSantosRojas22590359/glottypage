@@ -1,5 +1,13 @@
 # Resumen de la Reestructuración Arquitectónica - Sprint 4
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 4 |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregados modelos HorarioPeriodo y Grupo |
+| 1.2 | 25/01/2025 | Isaac Jonathan Santos Rojas | Documentación completa del PeriodoController |
+| | | | |
+
 ## Transformación Central
 
 El Sprint 4 ejecutó una reestructuración fundamental del sistema GLOTTY, transformando la arquitectura de módulos independientes a un modelo centrado en el Periodo Académico como entidad raíz. Esta transformación estableció una jerarquía clara donde todas las operaciones académicas dependen contextualmente de un periodo específico.

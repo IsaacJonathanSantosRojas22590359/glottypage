@@ -1,5 +1,12 @@
 # Resumen Detallado del Sprint 2 - Sistema de Gestión Académica
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 2 |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregada documentación del modelo Aula |
+| | | | |
+
 ## Objetivos y Alcance del Sprint
 
 El Sprint 2 se centró en el desarrollo completo de los módulos fundamentales para la gestión académica del sistema. Se implementaron cinco componentes principales que forman la base operativa del sistema de coordinación de cursos de inglés. Cada módulo fue diseñado con validaciones robustas, flujos de trabajo definidos y una arquitectura escalable que permite la gestión integral del ciclo académico.
@@ -279,7 +286,7 @@ try {
 - Reportes avanzados
 - Optimización de rendimiento
 
----
+
 
 **Estado del Sprint**:  **COMPLETADO**  
 **Calidad de Código**:  **ALTA** (Validaciones robustas, arquitectura sólida)  

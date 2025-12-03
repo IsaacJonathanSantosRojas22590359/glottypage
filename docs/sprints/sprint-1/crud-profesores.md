@@ -1,9 +1,16 @@
 # Controlador ProfesorController
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación técnica completa del ProfesorController |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregadas validaciones y casos de uso |
+| | | | |
+
 ## Descripción General
 El controlador `ProfesorController` gestiona las operaciones CRUD relacionadas con la administración de profesores. Contiene métodos para listar, registrar, editar, actualizar y eliminar profesores, incluyendo validaciones y manejo de errores.
 
----
+
 
 # Métodos del Controlador
 
@@ -19,7 +26,7 @@ Obtiene todos los profesores registrados y los envía a la vista correspondiente
 ### Propósito
 Mostrar una lista completa de profesores disponibles en el sistema.
 
----
+
 
 ## 2. create()
 
@@ -29,7 +36,7 @@ Retorna la vista con el formulario para registrar un nuevo profesor.
 ### Propósito
 Permitir capturar la información de un profesor desde cero.
 
----
+
 
 ## 3. store(Request $request)
 
@@ -48,7 +55,7 @@ Valida y registra un nuevo profesor en la base de datos.
 3. Encripta la contraseña usando `Hash::make`.
 4. Redirige con mensaje de éxito o error.
 
----
+
 
 ## 4. edit($id)
 
@@ -58,7 +65,7 @@ Obtiene un profesor por su ID y lo envía a la vista para editar sus datos.
 ### Propósito
 Modificar la información almacenada previamente.
 
----
+
 
 ## 5. update(Request $request, $id)
 
@@ -77,7 +84,7 @@ Actualiza la información de un profesor, incluyendo la validación dinámica qu
 4. Se actualiza el registro.
 5. Se redirige con la respuesta correspondiente.
 
----
+
 
 ## 6. destroy($id)
 
@@ -93,7 +100,7 @@ Elimina un profesor si no tiene grupos asignados.
 ### Propósito
 Mantener la integridad referencial del sistema.
 
----
+
 
 # Resumen General
 

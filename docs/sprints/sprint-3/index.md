@@ -1,5 +1,12 @@
 # Resumen General del Sistema de Gestión Académica
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 3 |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregados modelos Periodo y Preregistro |
+| | | | |
+
 ## Arquitectura del Sistema
 
 ### Estructura MVC Implementada

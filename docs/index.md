@@ -1,5 +1,12 @@
 # Sistema GLOTTY - Documentación Técnica
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 15/01/2025 | Isaac Jonathan Santos Rojas | Versión inicial de la página principal |
+| 1.1 | 20/01/2025 | Isaac Jonathan Santos Rojas | Agregada navegación completa de sprints |
+| | | | |
+
 ## Descripción del Proyecto
 Bienvenido a la documentación técnica oficial del Sistema GLOTTY, una plataforma de gestión académica desarrollada en Laravel por el equipo Axolotl Solutions. Este sistema está diseñado para instituciones educativas que requieren una solución integral para la administración de procesos académicos.
 

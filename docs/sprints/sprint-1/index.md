@@ -4,6 +4,13 @@
 **Estado:** Completado  
 **Equipo:** Axolotl Solutions
 
+**Historial de Versiones**
+| Versión | Fecha | Autor | Descripción de los Cambios |
+|---------|-------|-------|---------------------------|
+| 1.0 | 26/10/2025 | Isaac Jonathan Santos Rojas | Documentación inicial del Sprint 1 |
+| 1.1 | 06/11/2025 | Isaac Jonathan Santos Rojas | Agregados diagramas y detalles técnicos |
+| | | | |
+
 ## Objetivo
 Establecer los fundamentos de seguridad del sistema y la administración de recursos humanos académicos.
 
